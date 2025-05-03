@@ -34,10 +34,14 @@ const Home = () => {
 				<input className="text-center border w-50 " placeholder="Escribe tu Tarea" onChange={onChange} onKeyDown={onKeyDown} value={newtask} />
 			</div>
 			<div className="d-flex justify-content-center h-50">
-				<TaskList tasks={taskList} removeTask={removeTask} />
+				{taskList.length === 0 ? (
+					<p>Añadir tus tareas</p> 
+				) : (
+					<TaskList tasks={taskList} removeTask={removeTask} />
+				)}
 			</div>
 			<div className="d-flex justify-content-center ">
-				<p className="w-50 text-start last-page" >{taskList.length} item left</p>
+				<p className="border w-50 text-start last-page" >{taskList.length} Tareas pendientes</p>
 			</div>
 		</div>
 	);

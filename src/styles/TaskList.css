@@ -12,4 +12,5 @@
 }
 .task-item:hover .delete-btn {
     visibility: visible;
+    background-color: rgb(250, 250, 249);
 }
