@@ -1,0 +1,15 @@
+.task-item {
+    position: relative;
+    padding: 5px;
+}
+.delete-btn {
+    visibility: hidden;
+    cursor: pointer;
+    border: none;
+    height: max-content;
+    font-size: larger;
+    
+}
+.task-item:hover .delete-btn {
+    visibility: visible;
+}
