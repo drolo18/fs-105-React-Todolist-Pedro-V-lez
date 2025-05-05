@@ -41,7 +41,9 @@ const Home = () => {
 				)}
 			</div>
 			<div className="d-flex justify-content-center ">
-				<p className="border w-50 text-start last-page" >{taskList.length} Tareas pendientes</p>
+			{taskList.length === 0 ? (
+					<p>No hay tareas, añadir tareas!</p> 
+				) : (<p className="border w-50 text-start last-page" >{taskList.length} Tareas pendientes</p>)}
 			</div>
 		</div>
 	);
